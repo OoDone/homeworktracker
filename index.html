@@ -212,14 +212,16 @@ button {
             });
         });
         window.onload = function() {
-    if (window.jQuery) {  
-        // jQuery is loaded  
-        window.alert("Yeah!");
-    } else {
-        // jQuery is not loaded
-        window.alert("Doesn't Work");
-    }
-}
+            if (window.jQuery) {  
+                // jQuery is loaded  
+                window.alert("Yeah!");
+                alert("Yeah! no window");
+            } else {
+                // jQuery is not loaded
+                window.alert("Doesn't Work");
+                alert("no workie or window");
+            }
+        }
     </script>
 </body>
 </html>
