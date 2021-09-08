@@ -2,7 +2,6 @@
 <html>
     <head>
         <title>HTML Elements Reference</title>
-        <script src="https://raw.githubusercontent.com/OoDone/homeworktracker/main/jquery.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <style>
         body{
@@ -166,16 +165,12 @@ button {
 }
         </style>
         <script type="text/javascript">
-            loadImage();
-        function loadImage() {
-            alert("Image is loaded");
-        }
            $( "#close" ).click(function() {
             $( "#hellobar-bar" ).fadeOut( "slow", function() {
                 alert("hi");
             });
         });
-        window.onload = function() {
+        /*window.onload = function() {
             alert("test jquery");
             if (window.jQuery) {  
                 // jQuery is loaded  
@@ -184,7 +179,7 @@ button {
                 // jQuery is not loaded
                 alert("Doesn't work");
             }
-        }
+        }*/
         </script>
         </head>
     <body>
