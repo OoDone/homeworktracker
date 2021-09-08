@@ -3,7 +3,29 @@
 <body>
     <script src="https://raw.githubusercontent.com/OoDone/homeworktracker/main/jquery.min.js"></script>
     <element onload="loadImage()">
-    
+        <script>
+        function loadImage() {
+            alert("Image is loaded");
+        }
+        $( "#close" ).click(function() {
+            $( "#hellobar-bar" ).fadeOut( "slow", function() {
+                alert("hi");
+            });
+        });
+        window.onload = function() {
+            alert("test no window");
+            window.alert("test2");
+            if (window.jquery) {  
+                // jQuery is loaded  
+                window.alert("Yeah!");
+                alert("Yeah! no window");
+            } else {
+                // jQuery is not loaded
+                window.alert("Doesn't Work");
+                alert("no workie or window");
+            }
+        }
+    </script>
     <style>
         body{
     margin: 0;
@@ -205,28 +227,5 @@ button {
    </li>
  </ul>
 </form>
-    <script>
-        function loadImage() {
-            alert("Image is loaded");
-        }
-        $( "#close" ).click(function() {
-            $( "#hellobar-bar" ).fadeOut( "slow", function() {
-                alert("hi");
-            });
-        });
-        window.onload = function() {
-            alert("test no window");
-            window.alert("test2");
-            if (window.jquery) {  
-                // jQuery is loaded  
-                window.alert("Yeah!");
-                alert("Yeah! no window");
-            } else {
-                // jQuery is not loaded
-                window.alert("Doesn't Work");
-                alert("no workie or window");
-            }
-        }
-    </script>
 </body>
 </html>
