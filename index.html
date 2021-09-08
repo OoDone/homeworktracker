@@ -2,6 +2,7 @@
 <html>
 <body>
     <script src="https://raw.githubusercontent.com/OoDone/homeworktracker/main/jquery.min.js"></script>
+    <element onload="loadImage()">
     
     <style>
         body{
@@ -205,6 +206,9 @@ button {
  </ul>
 </form>
     <script>
+        function loadImage() {
+            alert("Image is loaded");
+        }
         $( "#close" ).click(function() {
             $( "#hellobar-bar" ).fadeOut( "slow", function() {
                 alert("hi");
