@@ -211,15 +211,15 @@ button {
                 alert("hi");
             });
         });
-        $(document).ready(function(){
-             if (jQuery) {  
-               // jQuery is loaded  
-               window.alert("Yeah!");
-             } else {
-               // jQuery is not loaded
-               window.alert("Doesn't Work");
-             }
-          });
+        window.onload = function() {
+    if (window.jQuery) {  
+        // jQuery is loaded  
+        window.alert("Yeah!");
+    } else {
+        // jQuery is not loaded
+        window.alert("Doesn't Work");
+    }
+}
     </script>
 </body>
 </html>
