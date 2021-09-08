@@ -165,14 +165,10 @@ button {
 }
         </style>
         <script type="text/javascript">
+            loadImage();
         function loadImage() {
             alert("Image is loaded");
         }
-        $( "#close" ).click(function() {
-            $( "#hellobar-bar" ).fadeOut( "slow", function() {
-                alert("hi");
-            });
-        });
         window.onload = function() {
             alert("test no window");
             window.alert("test2");
