@@ -132,11 +132,15 @@ button {
         <script type="text/javascript">
             function closeNotif() {
                 $('#hellobar-bar').fadeOut();
+                showNotif();
             }
             function timeNotif() {
                 setTimeout(function() {
                     $('#hellobar-bar').fadeOut();
                 },10000);
+            }
+            function showNotif() {
+                $('#hellobar-bar').fadeIn();
             }
         </script>
         </head>
