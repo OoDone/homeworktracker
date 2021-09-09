@@ -134,7 +134,7 @@ button {
                 console.log( "ready!" );
                 $('#hellobar-bar').hide();
             });
-            $('#form').submit(function () {
+            $('#AForm').submit(function () {
                 alert("submit");
                 return false;
             });
@@ -170,8 +170,7 @@ button {
 
 
 
-<form id="form">
- <ul>
+<form id="AForm">
   <li>
     <label for="name">Class:</label>
     <input type="text" id="name" name="user_name" />
@@ -187,7 +186,6 @@ button {
    <li class="button">
        <button type="submit" onclick="submit();">Submit</button>
    </li>
- </ul>
 </form>
 </body>
 </html>
