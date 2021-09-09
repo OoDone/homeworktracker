@@ -134,6 +134,10 @@ button {
                 console.log( "ready!" );
                 $('#hellobar-bar').hide();
             });
+            $('#form').submit(function () {
+                alert("submit");
+                return false;
+            });
             function closeNotif() {
                 $('#hellobar-bar').fadeOut();
             }
@@ -166,7 +170,7 @@ button {
 
 
 
-<form>
+<form id="form">
  <ul>
   <li>
     <label for="name">Class:</label>
