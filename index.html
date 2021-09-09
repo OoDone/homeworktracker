@@ -131,8 +131,12 @@ button {
         <script type="text/javascript">
             function closeNotif() {
                 $('#hellobar-bar').fadeOut();
+                timeNotif();
             }
             function timeNotif() {
+                setTimeout(function() {
+                    alert("test");
+                },1000,1000);
             }
         </script>
         </head>
