@@ -134,8 +134,9 @@ button {
                 console.log( "ready!" );
                 $('#hellobar-bar').hide();
             });
-            $('AForm').on('submit', function(event) {
+            $('submitForm').on('submit', function(event) {
                 event.preventDefault();
+                return false;
                 alert("x");
             });
             function closeNotif() {
