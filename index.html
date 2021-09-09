@@ -132,7 +132,6 @@ button {
         <script type="text/javascript">
             function closeNotif() {
                 $('#hellobar-bar').fadeOut();
-                showNotif();
             }
             function timeNotif() {
                 setTimeout(function() {
@@ -141,6 +140,9 @@ button {
             }
             function showNotif() {
                 $('#hellobar-bar').fadeIn();
+            }
+            function submit() {
+                showNotif();
             }
         </script>
         </head>
@@ -160,7 +162,7 @@ button {
 
 
 
-<form action="/my-handling-form-page" method="post">
+<form action="submit();" method="post">
  <ul>
   <li>
     <label for="name">Class:</label>
