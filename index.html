@@ -129,8 +129,8 @@ button {
 }
         </style>
         <script type="text/javascript">
-            $( "#close" ).click(function() {
-                $('#hellobar-bar').fadeOut()">&#10006;
+            function closeNotif() {
+                $('#hellobar-bar').fadeOut();
                 alert("hi");
             });
         </script>
@@ -145,7 +145,7 @@ button {
         </div>
     </div>
     <div class="hb-close-wrapper">
-        <a href="javascript:void(0);" id="close" class="icon-close" onclick="$('#hellobar-bar').fadeOut()">&#10006;</a>
+        <a href="javascript:void(0);" id="close" class="icon-close" onclick="closeNotif();">&#10006;</a>
     </div>
 </div>
 
