@@ -134,9 +134,9 @@ button {
                 console.log( "ready!" );
                 $('#hellobar-bar').hide();
             });
-            $('#AForm').submit(function () {
-                alert("submit");
-                return false;
+            $('AForm').on('submit', function(event) {
+                event.preventDefault();
+                alert("x");
             });
             function closeNotif() {
                 $('#hellobar-bar').fadeOut();
@@ -150,6 +150,7 @@ button {
                 $('#hellobar-bar').fadeIn();
             }
             function submit() {
+                e.preventDefault();
                 showNotif();
             }
         </script>
@@ -184,7 +185,7 @@ button {
     <textarea id="msg" name="user_message"></textarea>
   </li>
    <li class="button">
-       <button type="submit" onclick="submit();">Submit</button>
+       <button type="submit">Submit</button>
    </li>
 </form>
 </body>
