@@ -130,6 +130,10 @@ button {
 }
         </style>
         <script type="text/javascript">
+            $( document ).ready(function() {
+                console.log( "ready!" );
+                $('#hellobar-bar').hide();
+            });
             function closeNotif() {
                 $('#hellobar-bar').fadeOut();
             }
