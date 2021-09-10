@@ -146,10 +146,11 @@ button {
                 showNotif();
                 var xmlHttp = new XMLHttpRequest();
                 xmlHttp.onreadystatechange = function() { 
-                    if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {xmlHttp.responseText);}
+                    if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {xmlHttp.responseText); alert("s");}
                 }
-                xmlHttp.open("POST", 'https://ffamodea.herokuapp.com', false); // false for synchronous request
+                xmlHttp.open("POST", 'https://ffamodea.herokuapp.com', true); // false for synchronous request
                 xmlHttp.send("TEST");
+                alert("finished");
                 
             }
         </script>
