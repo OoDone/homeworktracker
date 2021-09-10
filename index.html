@@ -144,7 +144,9 @@ button {
             }
             function submit() {
                 showNotif();
+                alert("before");
                 var xmlHttp = new XMLHttpRequest();
+                alert("first");
                 xmlHttp.onreadystatechange = function() { 
                     if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {xmlHttp.responseText); alert("s");}
                 }
