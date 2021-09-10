@@ -12,3 +12,4 @@ var server = http.createServer(function(req, res) {
     response.end('post received')
   })
 });
+server.listen(8080 || process.env.PORT);
