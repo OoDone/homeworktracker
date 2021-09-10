@@ -1,0 +1,20 @@
+{
+    "name": "hwtracker",
+    "description": "hwtracker",
+    "version": "1.0.0",
+    "main": "server.js",
+    "author": "Github: OoDone",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "http": "latest",
+        "https": "latest"
+    },
+    "keywords": [],
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/JE5143/KahootBotter/issues"
+    },
+    "homepage": "https://github.com/JE5143/KahootBotter"
+}
