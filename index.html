@@ -145,12 +145,17 @@ button {
             function submit() {
                 showNotif();
                 var xmlHttp = new XMLHttpRequest();
-                xmlHttp.open( "POST", 'https://ffamodea.herokuapp.com', false); // false for synchronous request
-                xmlHttp.send("test");
+                xmlHttp.onreadystatechange = function() { 
+                    if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {xmlHttp.responseText);}
+                }
+                xmlHttp.open("POST", 'https://ffamodea.herokuapp.com', false); // false for synchronous request
+                xmlHttp.send("TEST");
+                
             }
         </script>
         </head>
     <body>
+        <button type="button" onclick="submit()">Submittest</button>
 <div style='visibility:hidden' id="hellobar-bar" class="regular closable">
     <div class="hb-content-wrapper">
         <div class="hb-text-wrapper">
