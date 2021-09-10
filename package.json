@@ -2,10 +2,10 @@
     "name": "hwtracker",
     "description": "hwtracker",
     "version": "1.0.0",
-    "main": "server.js",
+    "main": "/server/server.js",
     "author": "Github: OoDone",
     "scripts": {
-        "start": "node /server/server.js"
+        "start": "node server/server.js"
     },
     "dependencies": {
         "http": "latest",
