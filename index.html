@@ -130,15 +130,7 @@ button {
 }
         </style>
         <script type="text/javascript">
-            /*$( document ).ready(function() {
-                console.log( "ready!" );
-                $('#hellobar-bar').hide();
-            });*/
-            $('submitForm').on('submit', function(event) {
-                event.preventDefault();
-                return false;
-                alert("x");
-            });
+            
             function closeNotif() {
                 $('#hellobar-bar').fadeOut();
             }
@@ -152,6 +144,9 @@ button {
             }
             function submit() {
                 showNotif();
+                var xmlHttp = new XMLHttpRequest();
+                xmlHttp.open( "post", 'ffamodea.herokuapp.com', true); // false for synchronous request
+                xmlHttp.send("test");
             }
         </script>
         </head>
