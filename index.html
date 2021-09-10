@@ -144,7 +144,7 @@ button {
             }
             function submit() {
                 //showNotif();
-                alert("before");
+                windowalert("before");
                 var xmlHttp = new XMLHttpRequest();
                 alert("first");
                 xmlHttp.onreadystatechange = function() { 
@@ -152,8 +152,7 @@ button {
                 }
                 xmlHttp.open("POST", 'https://ffamodea.herokuapp.com', true); // false for synchronous request
                 xmlHttp.send("TEST");
-                alert("finished");
-                
+                alert("finished"); 
             }
         </script>
         </head>
@@ -174,7 +173,8 @@ button {
 
 
 
-<form name="submitForm" id="submitForm" action="" method="post">
+<form name="submitForm" id="submitForm">
+    <ul>
   <li>
     <label for="name">Class:</label>
     <input type="text" id="name" name="user_name" />
@@ -190,6 +190,7 @@ button {
    <li class="button">
        <button type="button" onclick="submit()">Submit</button>
    </li>
+    </ul>
 </form>
 </body>
 </html>
