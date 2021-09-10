@@ -143,8 +143,8 @@ button {
                 $('#hellobar-bar').fadeIn();
             }
             function submit() {
-                //showNotif();
-                windowalert("before");
+                showNotif();
+                window.alert("before");
                 var xmlHttp = new XMLHttpRequest();
                 alert("first");
                 xmlHttp.onreadystatechange = function() { 
@@ -157,7 +157,7 @@ button {
         </script>
         </head>
     <body>
-        <button2 type="button" onclick='alert("ss")'>Submittest</button2>
+        <button2 type="button" onclick='submit()'>Submittest</button2>
 <div style='visibility:hidden' id="hellobar-bar" class="regular closable">
     <div class="hb-content-wrapper">
         <div class="hb-text-wrapper">
