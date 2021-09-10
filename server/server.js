@@ -1,7 +1,5 @@
 var http = require('http'),
     https = require('https');
-var fs = require('fs');
-var cluster = require('./cluster.js');
 var body = ''
 var server = http.createServer(function(req, res) {
   request.on('data', function(data) {
