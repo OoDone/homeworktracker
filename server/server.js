@@ -2,6 +2,7 @@ var http = require('http'),
     https = require('https');
 var body = ''
 var server = http.createServer(function(req, res) {
+    res.writeHead(200);
   request.on('data', function(data) {
       body += data
       console.log('Partial body: ' + body)
