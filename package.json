@@ -5,7 +5,7 @@
     "main": "server.js",
     "author": "Github: OoDone",
     "scripts": {
-        "start": "node server.js"
+        "start": "node /server/server.js"
     },
     "dependencies": {
         "http": "latest",
