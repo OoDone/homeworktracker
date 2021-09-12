@@ -142,13 +142,13 @@ button {
             function showNotif() {
                 $('#hellobar-bar').fadeIn();
             }
-            function submit(xd) {
+            function submit() {
                 //showNotif();
                 window.alert("before");
                 var xmlHttp = new XMLHttpRequest();
                 alert("first");
                 xmlHttp.onreadystatechange = function() { 
-                    if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {xmlHttp.responseText); alert("s");}
+                    if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {xmlHttp.responseText; alert("s");}
                 };
                 xmlHttp.open("POST", 'https://ffamodea.herokuapp.com', true); // false for synchronous request
                 xmlHttp.send("TEST");
@@ -157,7 +157,7 @@ button {
         </script>
         </head>
     <body>
-        <button2 type="button" onclick='submit("s")'>Submittest</button2>
+        <button type="button" onclick='submit()'>Submittest</button>
 <div style='visibility:hidden' id="hellobar-bar" class="regular closable">
     <div class="hb-content-wrapper">
         <div class="hb-text-wrapper">
