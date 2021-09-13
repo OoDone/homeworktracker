@@ -147,12 +147,13 @@ button {
             }
             function submit() {
                 //showNotif();
+                var data = '';
                 var xmlHttp = new XMLHttpRequest();
                 xmlHttp.onreadystatechange = function() { 
                     if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {xmlHttp.responseText;}
                 };
                 xmlHttp.open("POST", 'https://ffamodea.herokuapp.com', true); // false for synchronous request
-                var data = getValue("name") + ":" + getValue("mail") + ":" + getValue("msg");
+                data = getValue("name") + ":" + getValue("mail") + ":" + getValue("msg");
                 xmlHttp.send(data);
             }
         </script>
