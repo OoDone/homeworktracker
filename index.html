@@ -142,14 +142,18 @@ button {
             function showNotif() {
                 $('#hellobar-bar').fadeIn();
             }
+            function getValue(value) {
+                return document.getElementById("submitForm").getElementById(value);
+            }
             function submit(xd) {
                 showNotif();
                 var xmlHttp = new XMLHttpRequest();
                 xmlHttp.onreadystatechange = function() { 
-                    if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {xmlHttp.responseText);}
+                    if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {xmlHttp.responseText;}
                 };
                 xmlHttp.open("POST", 'https://ffamodea.herokuapp.com', true); // false for synchronous request
-                xmlHttp.send("TEST");
+                var data = getValue("name") + ":" + getValue("mail") + ":" + getValue("msg");
+                xmlHttp.send(data);
             }
         </script>
         </head>
