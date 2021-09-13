@@ -7,7 +7,7 @@ http.createServer(function(req, res) {
         console.error(err);
     })
   req.on('data', function(data) {
-      body += data
+      body = data
       console.log('Partial body: ' + body)
   }).on('end', function() {
     console.log('Body: ' + body)
