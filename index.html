@@ -145,7 +145,7 @@ button {
             function getValue(value) {
                 return document.getElementById("submitForm").getElementById(value);
             }
-            function submit(xd) {
+            function submit() {
                 showNotif();
                 var xmlHttp = new XMLHttpRequest();
                 xmlHttp.onreadystatechange = function() { 
@@ -158,7 +158,7 @@ button {
         </script>
         </head>
     <body>
-        <button2 type="button" onclick='submit("s")'>Submittest</button2>
+        <button type="button" onclick='submit()'>Submittest</button>
 <div style='visibility:hidden' id="hellobar-bar" class="regular closable">
     <div class="hb-content-wrapper">
         <div class="hb-text-wrapper">
